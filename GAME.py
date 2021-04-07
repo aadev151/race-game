@@ -1,5 +1,3 @@
-#баг с счетом победителя
-
 import pygame as pg, time, random
 
 pg.init()
