@@ -21,3 +21,6 @@ Well, quite a few of them.
 
 ## Bugs
 Yes, it is highly likely that there are pretty many of them. If you find any, feel free to write me on [vomisina.xela@gmail.com](mailto:vomisina.xela@gmail.com)
+
+## BTW
+One of the most interesting and scariest at the same time facts about this game is that it was made with IDLE. All 2000 lines of code were written in IDLE. 🙂🔫
