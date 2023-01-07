@@ -2118,7 +2118,7 @@ if __name__ == "__main__":
     file = open("language.txt", "r")
     language = file.read()
     file.close()
-    if r == "True":
+    if r.strip() == "True":
         file = open("first_time.txt", "w")
         file.write("False1")
         file.close()
