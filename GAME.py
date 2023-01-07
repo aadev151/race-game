@@ -13,7 +13,7 @@ flag = True
 def ask(language, coins):
     screen = pg.display.set_mode((1200, 700))
 
-    font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
+    font = pg.font.Font('verdana.ttf', 30)
 
     if language == "e":
         choice = font.render("Please choose the game mode", 1, (0, 0, 0))
@@ -75,8 +75,8 @@ def fun():
         FPS = 60
         x = 600
         y = 650
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
-        nfont = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 20)
+        font = pg.font.Font('verdana.ttf', 30)
+        nfont = pg.font.Font('verdana.ttf', 20)
         y1 = 50
         y2 = 225
         y3 = 400
@@ -300,7 +300,7 @@ def choose_language():
     lang = "e"
     string = ""
     flag = False
-    font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
+    font = pg.font.Font('verdana.ttf', 30)
     
     language = font.render("Please, choose your language", 1, (0, 0, 0))
     place_language = language.get_rect(center=(600, 150))
@@ -364,8 +364,8 @@ def hello(language):
 
     string = ""
     flag = False
-    font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
-    nfont = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 25)
+    font = pg.font.Font('verdana.ttf', 30)
+    nfont = pg.font.Font('verdana.ttf', 25)
     
     if language == "r":
         s = font.render("Пожалуйста, придумайте свое игровое имя", 1, (0, 0, 0))
@@ -427,8 +427,8 @@ def hello(language):
 def settings(language):
     screen = pg.display.set_mode((1200, 700))
 
-    font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
-    nfont = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 25)
+    font = pg.font.Font('verdana.ttf', 30)
+    nfont = pg.font.Font('verdana.ttf', 25)
 
     flag1, flag2 = False, False
     
@@ -611,8 +611,8 @@ def widget(language, coins):
     flag = False
     text = []
     place = []
-    font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
-    nfont = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 25)
+    font = pg.font.Font('verdana.ttf', 30)
+    nfont = pg.font.Font('verdana.ttf', 25)
     
     enter = pg.image.load("enter.png").convert_alpha()
     enter = pg.transform.scale(enter, (150, 75))
@@ -694,9 +694,9 @@ def rool(language, coins):
     file.close()
     
     if language == "r":
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 40)
+        font = pg.font.Font('verdana.ttf', 40)
         txt = font.render("Правила", 1, (0, 0, 0))
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
+        font = pg.font.Font('verdana.ttf', 30)
         string.append(font.render("Правила игры предельно просты.", 1, (0, 0, 0)))
         string.append(font.render("Предыстория: Вы очень спешите на встречу, но как всегда Вам ", 1, (0, 0, 0)))
         string.append(font.render("преграждает дорогу огромное множество автомобилей.Ваша задача --", 1, (0, 0, 0)))
@@ -707,12 +707,12 @@ def rool(language, coins):
         string.append(font.render("Вы заработаете (Ваш счёт / 6) монет на Мегасложном режиме", 1, (0, 0, 0)))
         string.append(font.render("Чтобы поставить игру на паузу, нажмите на пробел. Когда игра закон-", 1, (255, 0, 0)))
         string.append(font.render("чится, нажмите на любую клавишу, чтобы продолжить", 1, (255, 0, 0)))
-        nfont =  pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 25)
+        nfont =  pg.font.Font('verdana.ttf', 25)
         text = nfont.render("Чтобы начать игру, нажмите на любую клавишу", 1, (0, 0, 0))
     elif language == "e":
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 40)
+        font = pg.font.Font('verdana.ttf', 40)
         txt = font.render("Rools", 1, (0, 0, 0))
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
+        font = pg.font.Font('verdana.ttf', 30)
         string.append(font.render("The rools of the game are really easy.", 1, (0, 0, 0)))
         string.append(font.render("You're very hurry cause you're late for a meeting. But", 1, (0, 0, 0)))
         string.append(font.render("there're a lot of cars so it's hard for you to . ", 1, (0, 0, 0)))
@@ -723,7 +723,7 @@ def rool(language, coins):
         string.append(font.render("You will earn (your score / 3) coins in the Megahard mode", 1, (0, 0, 0)))
         string.append(font.render("To pause the game, just press the SPACE button. When the game", 1, (255, 0, 0)))
         string.append(font.render("will over, press any button to continue.", 1, (255, 0, 0)))
-        nfont =  pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 25)
+        nfont =  pg.font.Font('verdana.ttf', 25)
         text = nfont.render("To start playing, press any button", 1, (0, 0, 0))
     place_txt = txt.get_rect(center=(600, 100))
     text_place = text.get_rect(center=(600, 670))        
@@ -754,7 +754,7 @@ def rool(language, coins):
 
 def start(language):    
     screen = pg.display.set_mode((1200, 700))
-    font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 40)
+    font = pg.font.Font('verdana.ttf', 40)
     txt = font.render("Большое Путешествие", 1, (0, 0, 0))
     place_txt = txt.get_rect(center=(600, 100))
     play = pg.Surface((400, 100))
@@ -763,7 +763,7 @@ def start(language):
     rools.fill((125, 125, 125))
     play_rect = play.get_rect(center=(600, 250))
     rools_rect = rools.get_rect(center=(600, 450))
-    nfont = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
+    nfont = pg.font.Font('verdana.ttf', 30)
 
     #languages
     english = pg.image.load('England.png').convert()
@@ -899,7 +899,7 @@ def single(language, coins):
         file.close()
       
         screen = pg.display.set_mode((1200, 700))
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 40)
+        font = pg.font.Font('verdana.ttf', 40)
         names = []
         places_names = []
         images = ['car5.png', 'car6.png', 'car7.png', 'car2.png', 'car4.png', 'car3.png', 'car1.png', 'car8.png']
@@ -913,7 +913,7 @@ def single(language, coins):
 
         if language == "r":
             txt = font.render("Выберите автомобиль", 1, (0, 0, 0))
-            font = pg.font.Font('C:\\WINDOWS\\Fonts\\segoesc.ttf', 35)
+            font = pg.font.Font('segoesc.ttf', 35)
             names.append(font.render("недоМосквич", 1, (0, 0, 0)))
             names.append(font.render("недоЖигуль", 1, (0, 0, 0)))
             names.append(font.render("недоМерседес", 1, (0, 0, 0)))
@@ -922,7 +922,7 @@ def single(language, coins):
             names.append(font.render("недоЛамборджини", 1, (0, 0, 0)))
             names.append(font.render("недоФеррари", 1, (0, 0, 0)))
             names.append(font.render("недоБугатти", 1, (0, 0, 0)))
-            font =  pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 25)
+            font =  pg.font.Font('verdana.ttf', 25)
             text = font.render("Чтобы начать игру, 2 раза нажмите на любую клавишу", 1, (0, 0, 0))
             money = font.render("Данный автомобиль не куплен", 1, (255, 0, 0))
             notenough = font.render("Недостаточно средств на счету", 1, (255, 0, 0))
@@ -931,7 +931,7 @@ def single(language, coins):
             
         elif language == "e":
             txt = font.render("Choose your car", 1, (0, 0, 0))
-            font = pg.font.Font('C:\\WINDOWS\\Fonts\\segoesc.ttf', 35)
+            font = pg.font.Font('segoesc.ttf', 35)
             names.append(font.render("almostFord", 1, (0, 0, 0)))
             names.append(font.render("almostJeep", 1, (0, 0, 0)))
             names.append(font.render("almostMercedes", 1, (0, 0, 0)))
@@ -940,7 +940,7 @@ def single(language, coins):
             names.append(font.render("almostLamborghini", 1, (0, 0, 0)))
             names.append(font.render("almostFerrari", 1, (0, 0, 0)))
             names.append(font.render("almostBugatti", 1, (0, 0, 0)))
-            font =  pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 25)
+            font =  pg.font.Font('verdana.ttf', 25)
             text = font.render("To start the game, press any button twice", 1, (0, 0, 0))
             money = font.render("You hasn't bought this car yet", 1, (255, 0, 0))
             notenough = font.render("Not enough money to buy this car", 1, (255, 0, 0))
@@ -1076,8 +1076,8 @@ def single(language, coins):
     def cmode(car, sencibility, lives, language, coins):
         screen = pg.display.set_mode((1200, 700))
 
-        nfont = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 40)
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
+        nfont = pg.font.Font('verdana.ttf', 40)
+        font = pg.font.Font('verdana.ttf', 30)
 
         flag = False
         
@@ -1140,7 +1140,7 @@ def single(language, coins):
         FPS = 60
         x = 600
         y = 650
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
+        font = pg.font.Font('verdana.ttf', 30)
         if mode != 4:
             y1 = 50
             y2 = 225
@@ -1547,7 +1547,7 @@ def multi(language):
         car = 0
       
         screen = pg.display.set_mode((1200, 700))
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 40)
+        font = pg.font.Font('verdana.ttf', 40)
         names = []
         places_names = []
         images = ['car5.png', 'car6.png', 'car7.png', 'car2.png', 'car4.png', 'car3.png', 'car1.png']
@@ -1555,7 +1555,7 @@ def multi(language):
 
         if language == "r":
             txt = font.render("Выберите автомобиль", 1, (0, 0, 0))
-            font = pg.font.Font('C:\\WINDOWS\\Fonts\\segoesc.ttf', 35)
+            font = pg.font.Font('segoesc.ttf', 35)
             names.append(font.render("Машинка1", 1, (0, 0, 0)))
             names.append(font.render("Машинка2", 1, (0, 0, 0)))
             names.append(font.render("Машинка3", 1, (0, 0, 0)))
@@ -1563,12 +1563,12 @@ def multi(language):
             names.append(font.render("Машинка5", 1, (0, 0, 0)))
             names.append(font.render("Машинка6", 1, (0, 0, 0)))
             names.append(font.render("Машинка7", 1, (0, 0, 0)))
-            font =  pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 25)
+            font =  pg.font.Font('verdana.ttf', 25)
             text = font.render("Чтобы продолжить, нажмите на любую клавишу", 1, (0, 0, 0))
             
         elif language == "e":
             txt = font.render("Choose your car", 1, (0, 0, 0))
-            font = pg.font.Font('C:\\WINDOWS\\Fonts\\segoesc.ttf', 35)
+            font = pg.font.Font('segoesc.ttf', 35)
             names.append(font.render("Car1", 1, (0, 0, 0)))
             names.append(font.render("Car2", 1, (0, 0, 0)))
             names.append(font.render("Car3", 1, (0, 0, 0)))
@@ -1576,7 +1576,7 @@ def multi(language):
             names.append(font.render("Car5", 1, (0, 0, 0)))
             names.append(font.render("Car6", 1, (0, 0, 0)))
             names.append(font.render("Car7", 1, (0, 0, 0)))
-            font =  pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 25)
+            font =  pg.font.Font('verdana.ttf', 25)
             text = font.render("To continue, press any button", 1, (0, 0, 0))
 
         place_txt = txt.get_rect(center=(600, 100))
@@ -1615,7 +1615,7 @@ def multi(language):
         car = 0
       
         screen = pg.display.set_mode((1200, 700))
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 40)
+        font = pg.font.Font('verdana.ttf', 40)
         names = []
         places_names = []
         images = ['car5.png', 'car6.png', 'car7.png', 'car2.png', 'car4.png', 'car3.png', 'car1.png']
@@ -1623,7 +1623,7 @@ def multi(language):
 
         if language == "r":
             txt = font.render("Выберите автомобиль", 1, (0, 0, 0))
-            font = pg.font.Font('C:\\WINDOWS\\Fonts\\segoesc.ttf', 35)
+            font = pg.font.Font('segoesc.ttf', 35)
             names.append(font.render("Машинка1", 1, (0, 0, 0)))
             names.append(font.render("Машинка2", 1, (0, 0, 0)))
             names.append(font.render("Машинка3", 1, (0, 0, 0)))
@@ -1631,12 +1631,12 @@ def multi(language):
             names.append(font.render("Машинка5", 1, (0, 0, 0)))
             names.append(font.render("Машинка6", 1, (0, 0, 0)))
             names.append(font.render("Машинка7", 1, (0, 0, 0)))
-            font =  pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 25)
+            font =  pg.font.Font('verdana.ttf', 25)
             text = font.render("Чтобы продолжить, нажмите на любую клавишу", 1, (0, 0, 0))
             
         elif language == "e":
             txt = font.render("Choose your car", 1, (0, 0, 0))
-            font = pg.font.Font('C:\\WINDOWS\\Fonts\\segoesc.ttf', 35)
+            font = pg.font.Font('segoesc.ttf', 35)
             names.append(font.render("Car1", 1, (0, 0, 0)))
             names.append(font.render("Car2", 1, (0, 0, 0)))
             names.append(font.render("Car3", 1, (0, 0, 0)))
@@ -1644,7 +1644,7 @@ def multi(language):
             names.append(font.render("Car5", 1, (0, 0, 0)))
             names.append(font.render("Car6", 1, (0, 0, 0)))
             names.append(font.render("Car7", 1, (0, 0, 0)))
-            font =  pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 25)
+            font =  pg.font.Font('verdana.ttf', 25)
             text = font.render("To continue, press any button", 1, (0, 0, 0))
 
         place_txt = txt.get_rect(center=(600, 100))
@@ -1687,7 +1687,7 @@ def multi(language):
         y11 = 650
         x2 = 900
         y22 = 650
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
+        font = pg.font.Font('verdana.ttf', 30)
         y1 = 50
         y2 = 225
         y3 = 400
@@ -2015,8 +2015,8 @@ def multi(language):
     def result(language, score1, score2):
         #score12 = 0
         
-        font = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 50)
-        nfont = pg.font.Font('C:\\WINDOWS\\Fonts\\verdana.ttf', 30)
+        font = pg.font.Font('verdana.ttf', 50)
+        nfont = pg.font.Font('verdana.ttf', 30)
         
         flag1 = True
         flag2 = False
